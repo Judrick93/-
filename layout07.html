@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {margin: 0; padding: 0;}
+      /*전체 레이아웃*/
+      #wrap {font-size: 20px; color:#fff; text-align: center; text-transform: uppercase; }
+      #header {height: 140px; background: #6b5465;}
+      #banner {height: 450px; background: #a0819a;}
+      #contents {height: 950px; background: #c69fbe;}
+      #footer {height: 220px; background: #ecbde2;}
+      /*레이아웃*/
+      #header-top {height: 70px; background: rgba(0,0,0,0.1); }
+      #header-nav {height: 70px; background: rgba(0,0,0,0.2); }
+      #contents1 {height: 90px; background: rgba(0,0,0,0.1); }
+      #contents2 {height: 480px; background: rgba(0,0,0,0.2); }
+      #contents3 {height: 380px; background: rgba(0,0,0,0.3); }
+      #footer-nav { height: 60px; background: rgba(0,0,0,0.1); }
+      #footer-info { height: 160px; background: rgba(0,0,0,0.2); }
+      /*컨테이너*/
+      .container {width: 1100px; height: inherit; margin: 0 auto; background:rgba(0,0,0,0.3)}
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <div id="header-top">
+          <div class="container">header-top</div>
+        </div>
+        <div id="header-nav">
+          <div class="container">header-nav</div>
+        </div>
+      </div>
+      <!-- //header -->
+      <div id="banner">
+        <div class="container">banner</div>
+      </div>
+      <!-- //banner -->
+      <div id="contents">
+        <div id="contents1">
+          <div class="container">contents1</div>
+        </div>
+        <div id="contents2">
+          <div class="container">contents2</div>
+        </div>
+        <div id="contents3">
+          <div class="container">contents3</div>
+        </div>
+      </div>
+      <!-- //contents -->
+      <div id="footer">
+        <div id="footer-nav">
+          <div class="container">footer-nav</div>
+        </div>
+        <div id="footer-info">
+          <div class="container">footer-info</div>
+        </div>
+      </div>
+      <!-- //footer -->
+    </div>
+  </body>
+</html>
