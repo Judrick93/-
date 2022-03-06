@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang=ko>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div.greyGridTable {
+        border: 2px solid #FFFFFF;
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+      }
+      .divTable.greyGridTable .divTableCell, .divTable.greyGridTable .divTableHead {
+        border: 1px solid #DDDDDD;
+        padding: 3px 3px;
+      }
+      .divTable.greyGridTable .divTableBody .divTableCell {
+        font-size: 13px;
+      }
+      .divTable.greyGridTable .divTableHeading {
+        background: #FFFFFF;
+        border-bottom: 2px solid #333333;
+      }
+      .divTable.greyGridTable .divTableHeading .divTableHead {
+        font-size: 12px;
+        font-weight: normal;
+        color: #333333;
+        text-align: center;
+        border-left: 0px solid #333333;
+      }
+      .divTable.greyGridTable .divTableHeading .divTableHead:first-child {
+        border-left: none;
+      }
+
+      .greyGridTable .tableFootStyle {
+        font-size: 8px;
+        font-weight: normal;
+        color: #333333;
+        border-top: 2px solid #333333;
+      }
+      .greyGridTable .tableFootStyle {
+        font-size: 8px;
+      }
+      /* DivTable.com */
+      .divTable{ display: table; }
+      .divTableRow { display: table-row; }
+      .divTableHeading { display: table-header-group;}
+      .divTableCell, .divTableHead { display: table-cell;}
+      .divTableHeading { display: table-header-group;}
+      .divTableFoot { display: table-footer-group;}
+      .divTableBody { display: table-row-group;}
+    </style>
+  </head>
+  <body>
+    <div class="divTable greyGridTable">
+    <div class="divTableHeading">
+    <div class="divTableRow">
+    <div class="divTableHead"></div>
+    <div class="divTableHead"></div>
+    <div class="divTableHead"></div>
+    </div>
+    </div>
+    <div class="divTableBody">
+    <div class="divTableRow">
+    <div class="divTableCell">cell1_1</div><div class="divTableCell">cell2_1</div><div class="divTableCell">cell3_1</div><div class="divTableCell">cell4_1</div></div>
+    <div class="divTableRow">
+    <div class="divTableCell">cell1_2</div><div class="divTableCell">cell2_2</div><div class="divTableCell">cell3_2</div><div class="divTableCell">cell4_2</div></div>
+    <div class="divTableRow">
+    <div class="divTableCell">cell1_3</div><div class="divTableCell">cell2_3</div><div class="divTableCell">cell3_3</div><div class="divTableCell">cell4_3</div></div>
+    <div class="divTableRow">
+    </div>
+    <div class="divTableFoot tableFootStyle">
+    <div class="divTableRow">
+    <div class="divTableCell">foot1</div>
+    <div class="divTableCell">foot2</div>
+    <div class="divTableCell">foot3</div>
+    </div>
+    </div>
+</div>
+  </body>
+</html>

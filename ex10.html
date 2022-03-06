@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object(객체)</h1>
+    <h2>Create</h2>
+    <script>
+      var babodle = {
+        "programmer":"judrick",
+        "designer":"yj",
+        "programmer":"lili"
+      };
+      document.write("programmer : "+babodle.programmer+"<br>");
+      document.write("designer : "+babodle.designer+"<br>");
+      babodle.dog="상순";
+      document.write("dog : "+babodle.dog+"<br>");
+      babodle["data scientist"]="theho";
+      document.write("data scientist : "+babodle["data scientist"]+"<br>")
+    </script>
+
+    <h2>Iterate(순회)</h2>
+    <script>
+      for(var key in babodle) {
+        document.write(key+':'+babodle[key]+'<br>');
+      }
+    </script>
+
+    <h2>Property(객체에 소속된 변수) & Method(함수이면서 객체에 소속된 함수)</h2>
+    <script>
+      babodle.showAll = function(){
+        for(var key in this) {
+          document.write(key+':'+this[key]+'<br>');
+        }
+
+      }
+      babodle.showAll();
+    </script>
+
+  </body>
+</html>
